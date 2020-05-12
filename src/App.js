@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PostcodeEntry from './components/PostcodeEntry.js';
 import SandwichChoice from './components/SandwichChoice.js';
 import AddressEntry from './components/AddressEntry.js';
+import Basket from './components/Basket.js';
 
 import './App.css';
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="App-header">
-      Sandwich Express
+      Just Sandwich
       </h1>
       <PostcodeEntry
       setPostcode={setPostcode}
@@ -20,6 +21,7 @@ function App() {
       />
       <SandwichChoice/>
       <AddressEntry/>
+      <Basket/>
     </div>
     );
   };

@@ -22,7 +22,7 @@ const [ postcodeLocal, setPostcodeLocal ] = useState('')
       >
 
       </input>
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>GO!</button>
     </div>
     );
   };
