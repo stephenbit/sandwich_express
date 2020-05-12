@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PostcodeEntry from './components/PostcodeEntry.js';
 import SandwichChoice from './components/SandwichChoice.js';
+import AddressEntry from './components/AddressEntry.js';
+
 import './App.css';
 
 function App() {
@@ -17,8 +19,9 @@ function App() {
       postcode={postcode}
       />
       <SandwichChoice/>
+      <AddressEntry/>
     </div>
-  );
-};
+    );
+  };
 
 export default App;

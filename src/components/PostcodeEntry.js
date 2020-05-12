@@ -13,16 +13,18 @@ const [ postcodeLocal, setPostcodeLocal ] = useState('')
     setPostcode(postcodeLocal)
   };
 
-  return <div>
+  return (
+    <div>
       <input
       type="text"
       onChange={handlePostcodeChange}
       defaultValue="Enter Postcode"
       >
+
       </input>
-      <br/>
       <button onClick={handleSubmit}>Submit</button>
-  </div>;
-}
+    </div>
+    );
+  };
 
 export default PostcodeEntry;
