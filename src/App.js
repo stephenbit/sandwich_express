@@ -8,9 +8,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <h1 className="App-header">
      Sandwich Express
-      </header>
+      </h1>
       <PostcodeEntry
       setPostcode={setPostcode}
       postcode={postcode}
