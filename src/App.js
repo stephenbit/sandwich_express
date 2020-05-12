@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PostcodeEntry from './components/PostcodeEntry.js';
+import SandwichChoice from './components/SandwichChoice.js';
 import './App.css';
 
 function App() {
@@ -9,14 +10,15 @@ function App() {
   return (
     <div className="App">
       <h1 className="App-header">
-     Sandwich Express
+      Sandwich Express
       </h1>
       <PostcodeEntry
       setPostcode={setPostcode}
       postcode={postcode}
       />
+      <SandwichChoice/>
     </div>
   );
-}
+};
 
 export default App;
