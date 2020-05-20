@@ -21,7 +21,6 @@ function SandwichChoice() {
         <label>Coronation Chicken Sandwich</label><input type="number" id="quantity" name="quantity" min="1" max="10"/>
         <button>Add to basket</button>
       </form>
-
       <form>
         <input type="image" src={Cheese} alt="Cheese Sandwich"/>
         <label>Cheese Sandwich</label><input type="number" id="quantity" name="quantity" min="1" max="10"/>
