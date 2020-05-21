@@ -26,10 +26,7 @@ function App() {
       setPostcode={setPostcode}
       postcode={postcode}
       />
-      <SandwichChoice
-      sandwiches={sandwiches}
-      setSandwiches={setSandwiches}
-      />
+      <SandwichChoice sandwiches={sandwiches}/>
       <AddressEntry/>
       <Basket/>
     </div>

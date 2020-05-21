@@ -3,14 +3,26 @@ import EggMayo from "../images/EggMayo.jpeg";
 import CoronationChicken from "../images/CoronationChicken.jpeg";
 import Cheese from "../images/Cheese.jpeg";
 
-function SandwichChoice({sandwiches, setSandwiches}) {
+function SandwichChoice({sandwiches}) {
 
 // const [ a, setA ] = useState('')
 
+    function mapImageURLs(photoId) {
+      return "../images/" + photoId
+    }
+
+    const sandwichPhotoId = sandwiches.map(photoId => (
+      "../images/" + sandwiches.photoId
+    ))
+
     const sandwichList = sandwiches.map(sandwiches => (
         <ul>
-          <li>
+          <li key={sandwiches._links.sandwich}>
             {sandwiches.name}
+            <img
+            src={sandwichPhotoId}
+            alt={sandwiches.name}
+            />
           </li>
         </ul>
     ))
