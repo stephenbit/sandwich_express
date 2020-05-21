@@ -3,13 +3,22 @@ import EggMayo from "../images/EggMayo.jpeg";
 import CoronationChicken from "../images/CoronationChicken.jpeg";
 import Cheese from "../images/Cheese.jpeg";
 
-function SandwichChoice() {
+function SandwichChoice({sandwiches, setSandwiches}) {
 
 // const [ a, setA ] = useState('')
+
+    const sandwichList = sandwiches.map(sandwiches => (
+        <ul>
+          <li>
+            {sandwiches.name}
+          </li>
+        </ul>
+    ))
 
   return (
     <div>
       <h2>Choose Your Sandwich!</h2>
+      {sandwichList}
       <form>
         <input type="image" src={EggMayo} alt="Egg Mayonaise Sandwich"/>
         <label>Egg Mayonaise Sandwich</label><input type="number" id="quantity" name="quantity" min="1" max="10"/>

@@ -9,7 +9,7 @@ import './App.css';
 function App() {
 
   const [postcode, setPostcode] = useState('');
-  const [sandwiches, setSandwiches] = useState([])
+  const [sandwiches, setSandwiches] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8080/sandwiches")
@@ -26,7 +26,10 @@ function App() {
       setPostcode={setPostcode}
       postcode={postcode}
       />
-      <SandwichChoice/>
+      <SandwichChoice
+      sandwiches={sandwiches}
+      setSandwiches={setSandwiches}
+      />
       <AddressEntry/>
       <Basket/>
     </div>
